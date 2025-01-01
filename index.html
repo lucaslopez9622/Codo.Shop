@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="img/faviconico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container-nav">
+            <a href="index.html" class="logo"><img src="img/logocodoshop.jpg" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                
+            </nav>
+           
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="novedades">
+            <p>!DESCUENTOS DESDE UN 30% PARA JUBILADOS Y 20 % POR FECHA DE CUMPLEAÑOS!</p>
+        </div>
+        <section>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="img/banner2.jpg" alt="BannerPromo">
+                    <img src="img/banner1.jpg" alt="BannerPromo">
+                </div>
+            </div>
+        </section>
+        
+        <div class="destacados">Destacados</div>
+        <div class="info-container">
+            <div class="info">
+                <img src="img/escudo.png" alt="info 1">
+                <p>¡Seguridad en tus compras!</p>
+            </div>
+        
+             <div class="info">
+                <img src="img/cuotas4.png" alt="info 2">
+                <p>¡Establecimiento adherido!</p>
+             </div>
+        
+             <div class="info">
+                <img src="img/cambio.png" alt="info 3">
+                <p>¡Cambios sin cargo de envio!</p>
+             </div>
+        
+        </div>
+        <div class="destacados">Promos de nuestras tiendas</div>
+        
+    
+        <div class="tiendas-container">
+           
+            <div class="tienda">
+                <div class="slider-tiendas">
+                    <img src="img/1.webp" alt="Tienda 1 Imagen 1" class="tienda-img active" data-descripcion="Remera GOL Negra." data-precio="$15.000">
+                    <img src="img/2.webp" alt="Tienda 1 Imagen 2" class="tienda-img" data-descripcion="Remera GOL Rosa." data-precio="$15.000">
+                    
+                    <button class="prev">‹</button>
+                    <button class="next">›</button>
+                </div>
+                <div class="tienda-text">
+                    <h3>Deportivo</h3>
+                    <p class="descripcion"></p>
+                    <p class="precio"></p>
+                    <button class="btn-agregar-carrito">Añadir al carrito</button>
+                </div>
+            </div>
+        
+            
+            <div class="tienda">
+                <div class="slider-tiendas">
+                    <img src="img/zapatillas.jpg" alt="zapatillas" class="tienda-img active" data-descripcion="zapatillas runnig." data-precio="$75.000">
+                    <img src="img/zapatillas2.jpg" alt="zapatillas" class="tienda-img" data-descripcion="zapatillas runnig." data-precio="$50.000">
+                    <img src="img/zapatillas3.jpg" alt="zapatillas" class="tienda-img" data-descripcion="zapatillas runnig." data-precio="$80.000">
+                    <button class="prev">‹</button>
+                    <button class="next">›</button>
+                </div>
+                <div class="tienda-text">
+                    <h3>Deportivo</h3>
+                    <p class="descripcion"></p>
+                    <p class="precio"></p>
+                    <button class="btn-agregar-carrito">Añadir al carrito</button>
+                </div>
+            </div>
+        
+            <div class="tienda">
+                <div class="slider-tiendas">
+                    <img src="img/3.jpg" alt="short" class="tienda-img active" data-descripcion="short hombre." data-precio="$55.000">
+                    <img src="img/4.jpg" alt="short" class="tienda-img" data-descripcion="short dama." data-precio="$50.000">
+                    <img src="img/top.jpg" alt="top" class="tienda-img" data-descripcion="top deportivo dama." data-precio="$60.000">
+                    <button class="prev">‹</button>
+                    <button class="next">›</button>
+                </div>
+                <div class="tienda-text">
+                    <h3>Deportivo</h3>
+                    <p class="descripcion"></p>
+                    <p class="precio"></p>
+                    <button class="btn-agregar-carrito">Añadir al carrito</button>
+                </div>
+            </div>
+        
+           
+            <div class="tienda">
+                <div class="slider-tiendas">
+                    <img src="img/remera1.jpg" alt="remera" class="tienda-img active" data-descripcion="remera urbana de mujer." data-precio="$35.000">
+                    <img src="img/remera2.jpg" alt="remera" class="tienda-img" data-descripcion="remera unisex" data-precio="$40.000">
+                    <img src="img/remera3.jpg" alt="remera" class="tienda-img" data-descripcion="remera unisex" data-precio="$50.000">
+                    <button class="prev">‹</button>
+                    <button class="next">›</button>
+                </div>
+                <div class="tienda-text">
+                    <h3>Urbano</h3>
+                    <p class="descripcion"></p>
+                    <p class="precio"></p>
+                    <button class="btn-agregar-carrito">Añadir al carrito</button>
+                </div>
+            </div>
+        
+    
+        <div id="cart">
+            <button id="btn-cerrar" class="btn-cerrar">&times;</button>
+            <h2>Carrito de compras</h2>
+            <div id="cart-items"></div>
+            <p class="total-price" id="total-price">Total: $0</p>
+            <button id="btn-comprar" class="btn-comprar">Comprar</button>
+        </div>
+
+       
+
+    </main>
+
+    <footer class="footer">
+        <span>
+            Copyright &copy;2024 Todos los derechos reservados | By CodoShop
+        </span>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/slider-home.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/tienda.js"></script>
+    <script src="js/cart.js"></script>
+    
+</body>
+</html>

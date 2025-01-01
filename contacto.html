@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="img/faviconico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container-nav">
+            <a href="index.html" class="logo"><img src="img/logocodoshop.jpg" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+ <main>   
+    <section class="page-header-section about-1">
+        <div class="section-header-wrapper no-padding-bottom">
+            <h1 class="title white-text">Contacto</h1>
+            <p class="section-description white-text">
+                Contactate con nosotros para conocer como obtener tu propia tienda
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header-wrapper section-header-wrapper-form no-padding-bottom">
+            <h2 class="section-header">Completa el formulario</h2>
+    
+            <div class="formulario">
+                <form action="https://formspree.io/f/mknlykzz" method="POST" class="form" id="formulario"
+                    onsubmit="return false;">
+    
+                
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <p class="error" id="error-nombre"></p>
+    
+                  
+                    <input type="text" name="tel" id="tel" placeholder="Teléfono">
+                    <p class="error" id="error-telefono"></p>
+    
+                    
+                    <input type="text" name="mail" id="mail" placeholder="Correo">
+                    <p class="error" id="error-mail"></p>
+    
+                   
+                    <textarea name="coment" id="coment" placeholder="Mensaje:"></textarea>
+                    <p class="error" id="error-comentario"></p>
+    
+                    <button type="submit" onclick="validarFormulario()" class="button contact-ready-button w-button">Contactar</button>
+    
+                </form>
+    
+            </div>
+        </div>
+    </section>
+
+</main> 
+
+<footer class="footer">
+    <span>
+        Copyright &copy;2024 Todos los derechos reservados | By CodoShop
+    </span>
+</footer>
+    <script src="js/valida-form.js"></script>
+</body>
+</html>

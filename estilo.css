@@ -445,6 +445,7 @@ button.prev:hover, button.next:hover {
 
 .slider_texts{
     max-width: 600px;
+    
 }
 
 .subtitle{
@@ -453,9 +454,9 @@ button.prev:hover, button.next:hover {
 }
 
 .slider_review{
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.7;
-    color: #9096a4;
+    color: #fa7100;
 }
 
 .slider_img{

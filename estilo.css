@@ -672,11 +672,16 @@ button.prev:hover, button.next:hover {
 
     .menu .navbar {
         position: absolute;
+        text-align: center;
         top: 100%;
         left: 0;
         right: 0;
         background-color: #181818;
         display: none;
+        flex-direction: column;
+        max-height: 100vh; 
+        overflow-y: auto; 
+        z-index: 1000; 
     }
 
     .menu .navbar ul li {
@@ -688,9 +693,9 @@ button.prev:hover, button.next:hover {
     }
 
     #menu:checked ~ .navbar {
-        display: initial;
+        display: flex;
     }
-    
+
     .logo {
         display: none;
     }
@@ -699,7 +704,7 @@ button.prev:hover, button.next:hover {
         min-width: 100%;
     }
 
-
+    
 }
 
 
@@ -783,6 +788,9 @@ button.prev:hover, button.next:hover {
         width: auto;
     }
 
+    .novedades p{
+        font-size: 3vw;
+    }
 
     .section-header {
         margin-top: 24px;
